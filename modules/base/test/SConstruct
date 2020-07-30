@@ -46,7 +46,7 @@ else:
 if envGlobal['append_buildpath']:
     envGlobal['BUILDPATH'] = os.path.abspath(os.path.join(buildfolder, module, envGlobal['append_buildpath'] + '/' ))
 
-envGlobal.Tool('utils_compilation_database')
+#envGlobal.Tool('utils_compilation_database')
 
 envGlobal.SConscript([
     os.path.join(rootpath, 'modules/SConscript.library'),
