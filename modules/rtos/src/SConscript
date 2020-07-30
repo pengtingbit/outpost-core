@@ -58,8 +58,8 @@ elif env['OS'] == 'posix':
 	
 	envGlobal.Append(LIBS=['rt', 'pthread'])
 else:
-	print "Error: Environment variable 'OS' not defined. Set it to " +\
-		  "none|rtems|freertos|posix to define the used operating system!"
+	print("Error: Environment variable 'OS' not defined. Set it to " +\
+		  "none|rtems|freertos|posix to define the used operating system!")
 	Exit(1)
 
 objects = []
