@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+# This SConstruct does nothing more than load the SConscript in this dir
+# The Environment() is created in the SConstruct script
+# This dir can be built standalone by executing scons here, or together
+# by executing scons in the parent directory
+
+rootpath    = '../..'
+
+env = Environment(
+    CXXFLAGS=["-std=c++11", "--debug"],
+    toolpath=[os.path.join(rootpath, 'scons-build-tools/site_tools')],
+    tools=['compiler_hosted_gcc',
+           'settings_buildpath',
+           'utils_buildformat',
+           'utils_buildsize'],
+    buildroot=[rootpath + 'build/'],
+    variables=vars,
+    BASEPATH=os.path.abspath('.'),
+    OS='posix',
+    ENV=os.environ)
+
+SConscript('SConscript.library', exports = ['env'])
