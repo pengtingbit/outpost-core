@@ -17,7 +17,7 @@
 #ifndef OUTPOST_SUPPORT_HEARTBEAT_H
 #define OUTPOST_SUPPORT_HEARTBEAT_H
 
-#include <outpost/parameter/support.h>
+#include <../../../default/outpost/parameter/support.h>
 #include <outpost/smpc/topic.h>
 #include <outpost/time/time_epoch.h>
 #include <outpost/time/time_point.h>

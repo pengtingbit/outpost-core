@@ -17,6 +17,7 @@ import os
 Import('envGlobal')
 
 envGlobal.Append(CPPPATH=[os.path.abspath('.')])
+envGlobal.Append(CPPPATH=[os.path.abspath('../default/outpost/parameter')])
 
 env = envGlobal.Clone()
 
@@ -32,4 +33,3 @@ envGlobal.Append(sources={'support': files})
 
 library = env.StaticLibrary('outpost_support', objects)
 envGlobal.Install('$BUILDPATH/lib', library)
-

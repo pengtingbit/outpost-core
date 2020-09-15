@@ -13,7 +13,7 @@
 
 #include "heartbeat_limiter.h"
 
-#include <outpost/parameter/support.h>
+#include <../../../default/outpost/parameter/support.h>
 
 namespace outpost
 {

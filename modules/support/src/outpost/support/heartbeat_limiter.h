@@ -16,7 +16,7 @@
 
 #include "heartbeat.h"
 
-#include <outpost/parameter/support.h>
+#include <../../../default/outpost/parameter/support.h>
 #include <outpost/time/clock.h>
 #include <outpost/time/duration.h>
 #include <outpost/time/time_epoch.h>
